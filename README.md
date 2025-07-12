@@ -1,6 +1,4 @@
-# z# ZAMA-Contract
-
-# Zama Developer Program – Level 2 Guide 
+# 🛡️ Zama Developer Program – Level 2 Guide (by Codespace)
 
 Complete Level 2 of the [Zama Developer Program](https://guild.xyz/zama/developer-program) using GitHub Codespace — clean, fast, and tested ✅
 
@@ -30,7 +28,7 @@ touch contracts/Calculator.sol
 1. Open ```contracts``` 
 2. Right Click 
 3. Add file
-4. Create ```/Calculator.sol``` and paste this code:
+4. Create ```Calculator.sol``` and paste this code:
 ```bash
 
 // SPDX-License-Identifier: MIT
@@ -109,15 +107,11 @@ main().catch((error) => {
 
 Run this in terminal:
 
-```bash
+```
 npx hardhat run scripts/deploy.js
 ```
 
-Expected output:
-
-```bash
-Calculator deployed to: 0xAbC...123
-```
+Expected output: ``` Calculator deployed to: 0xAbC...123 ```
 
 That address is your deployed smart contract address.
 
@@ -134,5 +128,40 @@ Visit:
 🎉 You’ve completed Level 3!
 
 ---
-Done now 
-ama-developer
+
+---
+
+# Complete Guide: How to Do More Than 10 Commits In GitHub Before 1 July 2025
+
+This guide helps you complete **15 GitHub commits on any Date** easily using **GitHub Codespaces** — so that you can participate in the **Zama Developer Program**
+
+---
+
+### 1️⃣ Create a New Repository
+
+- Go To: https://github.com/new 
+- Repository Name: `nothing` (or any name)  
+- Set to **Public**  
+- ✅ Tick "Add a README file"  
+- Click **Create repository**
+- Click on **`<> Code` → `Codespaces` → `+ New codespace`**. (Once Codespaces is ready)
+- Open the built-in terminal (bottom panel or `Terminal` → `New Terminal`).
+
+### 2️⃣ Run It
+```
+export BACKDATE="2025-06-30T12:00:00"
+
+for i in {1..10}
+do
+  echo "Backdated Commit $i" >> backdated.txt
+  git add backdated.txt
+  GIT_AUTHOR_DATE="$BACKDATE" GIT_COMMITTER_DATE="$BACKDATE" git commit -m "Backdated commit $i"
+done
+```
+```
+git push
+```
+
+• Now Refersh ur Repo to see ur more than 10 public commits visible on your profile (Before 1 July) — ready to use for Zama Developer Program
+
+---
